@@ -28,6 +28,10 @@ const courseSchedule = (numCourses, prerequisites) => {
    *
    * Note: If we traverse to a node that exists in visited, we have a cyclical graph and
    * should return immediately
+   *
+   * Time complexity of adjacencyMatrix => O(n^2), you must travel n distance to find a node,
+   * and another n times over each nodes edge.
+   *
    */
   for (let [course, prereq] of prerequisites) {
     adjacencyMatrix[prereq].push(course);

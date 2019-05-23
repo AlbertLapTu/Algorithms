@@ -94,7 +94,7 @@ const combinationSum = (candidates, target) => {
 
   if (candidates.length === 0) return result;
 
-  const permutetate = (candidates, target, index, permutations = []) => {
+  const permutate = (candidates, target, index, permutations = []) => {
     if (target === 0) {
       result.push(permutations);
     }

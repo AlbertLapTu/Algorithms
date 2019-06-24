@@ -116,7 +116,7 @@ const buildLPS = word => {
   return LPS;
 };
 
-console.log(LPS('ABABABCA'));
+// console.log(LPS('ABABABCA'));
 
 /*
  
@@ -162,3 +162,5 @@ const KMP = (text, pattern) => {
   }
   return -1;
 };
+
+console.log(KMP('HELLOSELECTASDFSELECT', 'SELECT'));
